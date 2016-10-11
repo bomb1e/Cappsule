@@ -1,0 +1,16 @@
+<ion-view title="">
+  <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-chevron-left buttons button-clear header-item" ng-click="$ionicGoBack()"></button>
+      <h1 class="title">Notifications</h1>
+  </ion-nav-buttons>
+
+	<ion-content>
+    <div class="list">
+    <a class="item item-avatar" ng-repeat="notification in notifications" ui-sref="app.accept-request" ng-click="openNotification()">
+      <img ng-src="{{notification.user.avatar}}">
+      <h2 style="font-size: 20px;">{{notification.user.name}}</h2>
+      <p style="font-size: 15px;">{{notification.notification.summary}}</p>
+    </a>
+  </div>
+  </ion-content>
+</ion-view>

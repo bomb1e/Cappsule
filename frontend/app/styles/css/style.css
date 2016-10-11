@@ -1,0 +1,59 @@
+/* Empty. Add your own CSS if you like */
+
+/*Main font*/
+
+@font-face {
+    font-family: Futura;
+    src: url(../../fonts/futura.ttf);
+}
+
+ion-content {
+  font-family: Futura !important;
+}
+
+.bar .title p,h1,h2,h3,h4,h5{
+  font-family: Futura !important;
+}
+
+.bar-assertive {
+  color: #355C7D !important;
+  background-color: #3e7cd0 !important;
+}
+.button-cappsule {
+  color: #ecf0f1 !important;
+  background-color: #3e7cd0 !important;
+}
+
+/*fab*/
+.float-button {
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.3);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 30px;
+  padding: 30px;
+  font-size: 40px;
+  background:#3e7cd0;
+  position: absolute;
+  bottom: 20px; /* Adjust to where you want it */
+  right: 0; /* Adjust to where you want it */
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999;
+}
+
+.float-button .height_fix {
+  margin-top: 100%;
+}
+
+.float-button .content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px; /* Note, this must be half the font size */
+  color: #ecf0f1;
+}

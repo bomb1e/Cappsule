@@ -1,0 +1,34 @@
+<ion-side-menus>
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-assertive nav-title-slide-android">
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-content style="background-color: rgba(255,255,255,1); color: gray">
+      <div class="header-img" style="height: 30%; padding: 5vh;">
+        <div class="avatar capsule-large" style="margin: 0 auto;">
+          <img ng-src="{{user.avatar}}" style="display: block; margin: 0 auto; height: 100px; width: 100px; border-radius: 50%;" alt=""/>
+        </div>
+        <h5 style="text-align: center;color: gray">{{user.name}}</h5>
+      </div>
+      <div class="list" style="position: relative; height: 70%;">
+        <a class="item item-icon-left" style="background-color: inherit !important">
+          <i class="icon ion-person-stalker"></i>
+          Friends
+          <!-- <span class="badge badge-assertive">{{friends.length}}</span> -->
+        </a>
+        <a class="item item-icon-left" style="background-color: inherit !important" href="">
+          <i class="icon ion-settings"></i>
+          Settings
+        </a>
+        <button class="button button-full button-assertive" style="width: 275px;" ng-click="logout()">
+          <i class="icon ion-log-out"></i>
+              Logout
+        </button>
+      </div>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

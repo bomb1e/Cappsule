@@ -1,0 +1,17 @@
+<div class="" style="background-color: #3e7cd0; color: white;">
+  <div class="" style="text-align: center;margin-top: 100px;">
+    <img src="images/logo.png" style="width: 100px; margin: 0 auto;"/>
+  </div>
+  <div style="margin-top: 50px; text-align: center;">
+    <div class="list" style="margin: 0 auto; padding: 20px;">
+      <label class="item item-input" style="margin: 20px; text-align:center; border-top: 0px; border-right: 0px; border-left:0px; border-radius: 25px;" >
+        <span class="input-label">Phone Number:</span>
+        <input type="tel" name="phoneNumber" ng-model="phoneNumber" required="true">
+      </label>
+      <p ng-show="!phoneNumberValidator">format is: +233 12 123 1234</p>
+      <p ng-show="noPhoneNumber">Please put a phone number</p>
+      <button class="button button-full button-positive" ng-click="loginWithNumber()">Sign In</button><br>
+      <!-- <button class="button button-full button-calm" ng-click="openDigits()">Sign In With Digits</button> -->
+    </div>
+  </div>
+</div>

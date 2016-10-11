@@ -1,0 +1,78 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "com.simonmacdonald.telephonenumber": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-sms": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.battery-status": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.contacts": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.device-orientation": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.geolocation": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.network-information": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.splashscreen": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.example.CapsuleMobile"
+        }
+    },
+    "dependent_plugins": {}
+}

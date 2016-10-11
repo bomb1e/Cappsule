@@ -1,0 +1,23 @@
+<ion-view >
+  <ion-nav-buttons side="left">
+      <button class="button button-icon icon ion-chevron-left buttons button-clear header-item" ng-click="$ionicGoBack()"></button>
+      <h1 class="title">Request from {{sentRequest.user.name}}</h1>
+  </ion-nav-buttons>
+  <ion-content class="requestdrops">
+    <form id="nl-form" class="nl-form" style="padding: 30px;">
+      <button style="color: #8CB4EA;">
+        <!-- <img ng-src="{{sentRequest.user.avatar}}" alt="" style="border-radius: 50px; border: 2px solid #8CB4EA; width: 100px; "/> -->
+        {{sentRequest.user.name}}
+      </button>
+      wants to
+      <button style="color: #8CB4EA; font-size: 1em;">
+        {{sentRequest.request.activity.title}}
+      </button>
+         on
+        <ion-checkbox style="background-color: inherit; color: white; border: 0px;" ng-repeat="suggestedTime in suggestedTimes track by $index" ng-model="suggestedTime.checked" ng-checked="suggestedTime.checked">{{suggestedTime.moment}}</ion-checkbox>
+      <button ng-show="suggestedTimes.length > 0" ng-click="acceptRequest()" class="send">
+          Accept
+      </button>
+    </form>
+  </ion-content>
+</ion-view>

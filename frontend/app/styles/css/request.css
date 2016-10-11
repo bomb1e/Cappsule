@@ -1,0 +1,68 @@
+.nl-form .send {
+	border: 1px dashed #FFD590;
+  padding: 0 10px 0 10px;
+  font-size: 1em;
+  /* border-radius: 5px; */
+  margin-top: 20px;
+}
+.requestdrops {
+	color: #F7F7F7 !important;
+	background: #3e7cd0 !important;
+	font-weight: 300;
+	overflow-x: hidden;
+}
+
+a {
+	color: #F7F7F7;
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	color: #333;
+}
+
+/* general style for the form */
+.nl-form {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 3em;
+	line-height: 1.2;
+	text-align: center;
+	margin-top: 15%
+}
+
+.nl-form ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* normalize the input elements, make them look like everything else */
+.nl-form input,
+.nl-form select,
+.nl-form button {
+	border: none;
+	background: transparent;
+	font-family: inherit;
+	font-size: inherit;
+	color: #F7F7F7;
+	font-weight: inherit;
+	line-height: inherit;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/* the toggle is the visible part in the form */
+.nl-field-toggle,
+.nl-form input,
+.nl-form select  {
+	line-height: inherit;
+	display: inline-block;
+	color: #F7F7F7;
+	cursor: pointer;
+	border-bottom: 1px dashed #FFD590;
+}

@@ -1,0 +1,55 @@
+<ion-view title="">
+  <ion-nav-buttons side="left">
+    <button class="button button-icon icon ion-android-menu assertive" ng-click="toggleMenu()"></button>
+      <h1 class="title">Cappsule</h1>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-android-notifications-none assertive" ui-sref="app.notifications"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-refresher pulling-text="Pull to refresh" on-refresh="refresh()">
+    </ion-refresher>
+    <div ng-if="capsules.length === 0" class="" style="padding: 30px;">
+      <p style="font-size: 2em; text-align: center; line-height: 1.5;">
+        You don't have any capsules. Click on the button at the bottom to invite a close friend
+      </p>
+    </div>
+    <div class="list card" ng-repeat="capsule in capsules" ui-sref="app.capsules-detail({capsule: this.capsule})" ng-click="logCapsule()">
+      <div class="item" style="text-align: center;">
+        <img class="capsule-large" ng-src = "{{capsule.partner.avatar}}" style="border-radius: 50%;">
+        <h2 style="margin-top: 2px; font-size: 20px;">{{capsule.partner.name}}</h2>
+      </div>
+      <div class="item item-body">
+        <table width="100%">
+          <td>
+            <tr>
+              <td rowspan="2" style="vertical-align: middle;">
+                <span ng-repeat="activity in capsule.activities" style="float: left">
+                  <img ng-src="{{getSymbol(activity)}}" style="display: inline; width: 40px; height: 40px; vertical-align: middle;"/>
+                </span>
+                <!-- <span style="font-size: 1em; float: left;">Most frequent activities:</span> -->
+              </td>
+              <td>
+                <span style="font-size: 20px; float: right;">Active</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span style="font-size: 15px; text-align: center; float: right;"><i>{{getLastRequest(capsule.requests)}}</i></span>
+              </td>
+            </tr>
+          </td>
+        </table>
+
+
+      </div>
+    </div>
+  </ion-content>
+  <div class="float-button" id="fab">
+    <span class="height-fix">
+      <a ui-sref="app.new-request" class="content">
+        <i class="ion-ios-plus-empty"> </i>
+      </a>
+    </span>
+  </div>
+</ion-view>

@@ -1,0 +1,29 @@
+{
+  "name": "digits-cordova",
+  "main": [
+    "digitsCordova.js",
+    "inappbrowser.js",
+    "telephonenumber.js",
+    "SMS.js"
+  ],
+  "description": "Integrating digits with cordova/phonegap apps",
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "digits"
+  ],
+  "authors": [
+    "Yang Li"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yangli1990/digits-cordova",
+  "_release": "e87beddbed",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "e87beddbed4ea06fb1c3fe23e2c60585f8365baa"
+  },
+  "_source": "git://github.com/yangli1990/digits-cordova.git",
+  "_target": "*",
+  "_originalSource": "digits-cordova"
+}

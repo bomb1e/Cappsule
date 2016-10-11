@@ -1,0 +1,41 @@
+<ion-view >
+    <ion-nav-buttons side="left">
+        <button class="button button-icon icon ion-chevron-left buttons button-clear header-item" ng-click="$ionicGoBack()"></button>
+        <h1 class="title">New Request</h1>
+    </ion-nav-buttons>
+  <ion-content class="requestdrops">
+
+    <form id="nl-form" class="nl-form">
+					I want to
+					<button style="border-bottom: 1px dashed #FFD590; color: #8CB4EA;" modal-select ng-model="selectedActivity" options="activities" modal-title="Activity" on-select="changed(newValue, oldValue)"  modal-class="smallmodal" header-footer-class="bar-positive">
+            {{selectedActivity.title}}
+            <div class="option">
+              {{option.title}}
+            </div>
+          </button>
+					<br/> with
+          <button style="border-bottom: 1px dashed #FFD590; color: #8CB4EA;" modal-select ng-model="selectedPerson" options="friends" modal-title="Person" on-select="changed(newValue, oldValue)" modal-class="smallmodal" header-footer-class="bar-positive">
+            {{selectedPerson.name}}.
+            <div class="option">
+              <div style="vertical-align: middle;">
+                <img ng-src="{{option.avatar}}" style="width: 40px; border-radius: 50%; vertical-align: middle; margin-right: 10px;"/>
+                <p style="font-size: 1em; text-align: center; vertical-align: middle; display: inline-block;">{{option.name}}</p>
+              </div>
+            </div>
+          </button>
+          <ion-list>
+            <p style="font-size: 1em;" ng-repeat="betterDateTime in betterDateTimes track by $index">
+              {{betterDateTime}}
+            </p>
+            <button style="border-bottom: 1px dashed #FFD590; color: #8CB4EA;" disablepreviousdates="true" ion-datetime-picker ng-model="datetimeValue" ng-change="betterDate(datetimeValue)">
+                make time
+            </button>
+          </ion-list>
+          <button ng-show="selectedDates.length > 0" type="button" class="send" name="send-request" ng-click="send(selectedActivity, selectedPerson, selectedDates)">Send to {{selectedPerson.name}}</button>
+          <p ng-show="!sent" style="font-size: 0.4em; color: #F7F7F7; background-color: #8CB4EA; border: 0px; border-radius: 10px; width: 50%; margin:10px auto auto auto; padding: 5px;">
+            Not Sent :( Please Resend
+          </p>
+        </form>
+
+  </ion-content>
+</ion-view>
